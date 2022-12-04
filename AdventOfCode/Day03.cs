@@ -24,8 +24,7 @@ public class Day03 : BaseDay
             var right = half;
             var leftLetters = new HashSet<char>();
             var rightLetters = new HashSet<char>();
-            var items = new HashSet<char>();
-            
+
             while (left < half)
             {
                 leftLetters.Add(line[left]);
@@ -33,19 +32,19 @@ public class Day03 : BaseDay
                 
                 if (rightLetters.Contains(line[left]))
                 {
-                    items.Add(line[left]);
+                    sum += ConvertFromCharToInt(line[left]);
+                    break;
                 }
                 
                 if (leftLetters.Contains(line[right]))
                 {
-                    items.Add(line[right]);
+                    sum += ConvertFromCharToInt(line[right]);
+                    break;
                 }
                 
                 left++;
                 right++;
             }
-        
-            sum += items.Sum(ConvertFromCharToInt);
         }
 
         return sum;
