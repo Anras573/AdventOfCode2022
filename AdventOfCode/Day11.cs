@@ -151,6 +151,5 @@ public class Day11 : BaseDay
         
         return (monkeys, modulo);
     }
+    private record Monkey(int Number, Queue<long> Items, Func<long, long> Operation, int Modulo, int TrueMonkey, int FalseMonkey);
 }
-
-public record Monkey(int Number, Queue<long> Items, Func<long, long> Operation, int Modulo, int TrueMonkey, int FalseMonkey);

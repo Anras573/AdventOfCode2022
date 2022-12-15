@@ -104,7 +104,7 @@ public class Day09 : BaseDay
     
     private int Part2()
     {
-        var rope = new Position[]
+        var rope = new[]
         {
             new Position(0, 0),
             new Position(0, 0),
@@ -207,6 +207,6 @@ public class Day09 : BaseDay
 
         return visitedPositions.Count;
     }
+    private record struct Position(int X, int Y);
 }
 
-public record struct Position(int X, int Y);

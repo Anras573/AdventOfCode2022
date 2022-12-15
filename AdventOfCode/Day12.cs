@@ -110,7 +110,6 @@ public class Day12 : BaseDay
             _ => c - 96
         };
     }
+    private record Node(Point Point, int Distance, int Value);
+    private record Point(int X, int Y);
 }
-
-public record Node(Point Point, int Distance, int Value);
-public record Point(int X, int Y);

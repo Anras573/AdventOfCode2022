@@ -114,8 +114,8 @@ public class Day13 : BaseDay
             hasRight = rightEnumerator.MoveNext();
         }
     }
+    
+    private abstract record Data;
+    private record Number(int Value) : Data;
+    private record Array(List<Data> Data) : Data;
 }
-
-public abstract record Data;
-public record Number(int Value) : Data;
-public record Array(List<Data> Data) : Data;

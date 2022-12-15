@@ -75,7 +75,6 @@ public class Day10 : BaseDay
         
         var bufferValue = 1;
         var queue = new Queue<int>();
-        var count = 0;
         
         foreach (var line in _input)
         {

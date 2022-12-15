@@ -15,7 +15,7 @@ public class Day05 : BaseDay
 
     private string Part1()
     {
-        var stacks = new Stack<char>[]
+        var stacks = new[]
         {
             new Stack<char>(),
             new Stack<char>(),
@@ -78,7 +78,7 @@ public class Day05 : BaseDay
     
     private string Part2()
     {
-        var stacks = new Stack<char>[]
+        var stacks = new[]
         {
             new Stack<char>(),
             new Stack<char>(),

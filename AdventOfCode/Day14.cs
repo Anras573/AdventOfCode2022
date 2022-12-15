@@ -114,13 +114,13 @@ public class Day14 : BaseDay
 
         return map;
     }
-}
-
-public record struct Coordinate(int X, int Y)
-{
-    public static Coordinate Parse(string input)
+    
+    private record struct Coordinate(int X, int Y)
     {
-        var split = input.Split(',');
-        return new Coordinate(int.Parse(split[0]), int.Parse(split[1]));
+        public static Coordinate Parse(string input)
+        {
+            var split = input.Split(',');
+            return new Coordinate(int.Parse(split[0]), int.Parse(split[1]));
+        }
     }
-};
+}
